@@ -1,0 +1,10 @@
+<h1>All Chirps</h1>
+<% @chirps.each do |chirp| %>
+<p><%= chirp.body %></p>
+<p>
+  -  <i><%= link_to chirp.author, author_chirps_path(chirp.author) %></i>
+</p>
+<%= link_to "Read more", chirp_path(chirp) %>
+<%= link_to "Make a New Chirp", new_chirp_path %>
+<%= image_tag chirp.pic.url %>
+<% end -%>

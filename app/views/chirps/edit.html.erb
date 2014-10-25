@@ -1,0 +1,14 @@
+<h1>Edit This Chirp</h1>
+<%= form_for @chirp do |f| %>
+<div>
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+</div>
+<div>
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+</div>
+<div>
+  <%= f.submit 'Save' %>
+</div>
+<% end %>
