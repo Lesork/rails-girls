@@ -1,9 +1,8 @@
-<h1>Chirps#show</h1>
-<h1>Chirp</h1>
+<h1>Chirps</h1>
 <p><%= @chirp.body %></p>
 - <i><%= @chirp.author %></i>
 <%= link_to "Edit", edit_chirp_path(@chirp) %>
 <%= link_to "Delete", chirp_path(@chirp), method: 'delete' %>
 </p>
-<%= link_to "Home", chirps_path %>
+<%= link_to "Home", root_path %>
 <%= image_tag @chirp.pic.url %>
